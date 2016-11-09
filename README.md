@@ -11,3 +11,6 @@ Open the `CoffeeGrindAnalysis.ipynb` jupyter notebook. The final scikit-learn pi
 
 ## Getting audio data
 If you want the train/test data used in this project drop me an email: andreas.flaten æt itk.ntnu.no.
+
+## Recording your own data
+You can find some examples of how to record data in `stream_mic.py`.
