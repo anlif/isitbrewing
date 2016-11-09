@@ -1,6 +1,6 @@
 import pyaudio
 import numpy as np
-from detector import load_pipeline
+from brew_detector import load_pipeline
 
 _osx_mic_name = u'Built-in Microph'
 _format = pyaudio.paInt16
