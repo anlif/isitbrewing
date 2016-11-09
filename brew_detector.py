@@ -10,23 +10,6 @@ from scipy.signal import hamming
 
 pipeline_joblib_fname = 'kaffe_pipeline.gz'
 
-class RawFeatureExtractor(object):
-    def __init__(self, Fs, win_size_sec=0.5, win_step=1.0):
-        self.Fs = Fs
-        self.window_size = win_size_sec*Fs
-        self.window_step = win_step*self.window_size
-    
-    def fit(self, X, y):
-        return self
-    
-    def transform(self, signal):
-        X_raw = audioFeatureExtraction.stFeatureExtraction(
-		signal,
-		self.Fs,
-		self.window_size,
-		self.window_step)
-        return X_raw.T
-
 class WindowedExtractor(object):
     def __init__(self, Fs, win_size_sec=0.5):
 	self.win_size_sec = win_size_sec
